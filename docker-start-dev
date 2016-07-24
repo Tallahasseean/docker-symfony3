@@ -1,0 +1,7 @@
+docker run -d --name legalcrm \
+           -p 8000:80 \
+           -ti -v "$PWD"/log/:/var/log/ \
+           -v "$PWD"/log/apache2:/var/log/apache2 \
+           -v "$PWD"/log/app/:/var/www/html/app/logs/ \
+           -v "$PWD"/src:/var/www/html \
+           --restart on-failure:5 caseysmith/legalcrm
