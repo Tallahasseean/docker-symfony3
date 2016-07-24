@@ -6,6 +6,8 @@ RUN apk add --update \
     php5-fpm \
     php5-apcu \
     php5-curl \
+    php5-ctype \
+    php5-dom \
     php5-gd \
     php5-iconv \
     php5-imagick \
@@ -26,7 +28,7 @@ RUN rm -rf /var/cache/apk/* && rm -rf /tmp/*
 ADD symfony.ini /etc/php5/fpm/conf.d/
 ADD symfony.ini /etc/php5/cli/conf.d/
 
-ADD symfony.pool.conf /etc/php5/fpm/pool.d/
+ADD symfony.pool.conf /etc/php5/fpm.d/
 
 CMD ["php-fpm", "-F"]
 
