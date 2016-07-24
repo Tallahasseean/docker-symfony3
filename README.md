@@ -1,8 +1,7 @@
-docker-symfony
+docker-symfony3
 ==============
 
-[![Build Status](https://secure.travis-ci.org/eko/docker-symfony.png?branch=master)](http://travis-ci.org/eko/docker-symfony)
-
+This was originally branched from https://github.com/eko/docker-symfony
 
 Just a little Docker POC in order to have a complete stack for running Symfony into Docker containers using docker-compose tool.
 
@@ -11,7 +10,7 @@ Just a little Docker POC in order to have a complete stack for running Symfony i
 First, clone this repository:
 
 ```bash
-$ git clone git@github.com:eko/docker-symfony.git
+$ git clone git@github.com/Tallahasseean/docker-symfony3
 ```
 
 Next, put your Symfony application into `symfony` folder and do not forget to add `symfony.dev` in your `/etc/hosts` file.
@@ -32,7 +31,7 @@ _Note :_ you can rebuild all Docker images by running:
 $ docker-compose build
 ```
 
-# How it works?
+# How it works
 
 Here are the `docker-compose` built images:
 
